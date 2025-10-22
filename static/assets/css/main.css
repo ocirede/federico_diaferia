@@ -3228,6 +3228,12 @@ input, select, textarea {
 			.gallery a.portrait img {
 				height: 14rem;
 			}
+			.touch{
+			    padding-left: 1rem;
+			    padding-right: 1rem
+			    box-sizing: border-box;
+
+			}
 
 		}
 
