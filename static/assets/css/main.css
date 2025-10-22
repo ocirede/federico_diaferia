@@ -3239,7 +3239,7 @@ input, select, textarea {
 			    box-sizing: border-box;
 
 			}
-			 .actions {
+			 .arrow.scrolly {
                 display: none;
               }
 
