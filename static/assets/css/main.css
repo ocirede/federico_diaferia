@@ -3226,8 +3226,13 @@ input, select, textarea {
 			}
 
 			.gallery a.portrait img {
-				height: 14rem;
-			}
+                height: auto;
+                max-height: 14rem;
+                width: 100%;
+                object-fit: cover;
+            }
+
+
 			.touch{
 			    padding-left: 1rem;
 			    padding-right: 1rem
