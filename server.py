@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 
@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html", email = os.getenv("EMAIL"), phone = os.getenv("PHONE"), address = os.getenv("ADDRESS")
+    user_agent = request.headers.get("User-Agent", "").lower()
+    is_mobile = "mobi" in user_agent or "android" in user_agent
+    return render_template("index.html", is_mobile=is_mobile,  email = os.getenv("EMAIL"), phone = os.getenv("PHONE"), address = os.getenv("ADDRESS")
 )
 
 
