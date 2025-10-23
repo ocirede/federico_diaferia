@@ -227,33 +227,46 @@
 							<header>
 								<h2>Get in touch</h2>
 							</header>
-
 							<footer>
-								<ul class="items">
+								  <ul class="items">
 									<li>
-										<h3>Email</h3>
-										{% if is_mobile%}
-										  <a href="mailto:{{ email }}">{{ email }}</a>
-										{% else %}
-										<a href="https://mail.google.com/mail/?view=cm&fs=1&to={{email}}" target="blank">{{email}}</a>
+									  <h3>Email</h3>
+									  {% if is_mobile %}
+										<a href="mailto:{{ email }}">{{ email }}</a>
+									  {% else %}
+										<a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ email }}" target="_blank">{{ email }}</a>
+									  {% endif %}
 									</li>
+
 									<li>
-										<h3>Phone</h3>
-										<span>{{phone}}</span>
+									  <h3>Phone</h3>
+									  <span>{{ phone }}</span>
 									</li>
+
 									<li>
-										<h3>Address</h3>
-										<span>{{address}}</span>
+									  <h3>Address</h3>
+									  <span>{{ address }}</span>
 									</li>
+
 									<li>
-										<h3>Elsewhere</h3>
-										<ul class="icons">
-											<li><a href="https://www.linkedin.com/in/federico-diaferia-902876225/" target="blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											<li><a href="https://github.com/ocirede" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										</ul>
+									  <h3>Elsewhere</h3>
+									  <ul class="icons">
+										<li>
+										  <a href="https://www.linkedin.com/in/federico-diaferia-902876225/"
+											 target="_blank" class="icon brands fa-linkedin-in">
+											<span class="label">LinkedIn</span>
+										  </a>
+										</li>
+										<li>
+										  <a href="https://github.com/ocirede"
+											 target="_blank" class="icon brands fa-github">
+											<span class="label">GitHub</span>
+										  </a>
+										</li>
+									  </ul>
 									</li>
-								</ul>
-							</footer>
+								  </ul>
+								</footer>
 						</section>
 					</section>
 				<!-- Section -->
