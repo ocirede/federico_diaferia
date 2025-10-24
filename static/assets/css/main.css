@@ -3270,9 +3270,17 @@ input, select, textarea {
 			 .arrow.scrolly {
                 display: none;
               }
-             .lang-toggle {
-                  float: right;
-                  margin: 10px;
+             section.intro header .lang-toggle {
+                  position: absolute !important;
+                  top: 20px !important;
+                  right: 20px !important;
+                  z-index: 9999 !important;
+                  margin: 0 !important;
+                  padding: 0 !important;
+             }
+
+             section.intro header {
+               position: relative !important;
              }
 
 /* Feature Icons */
