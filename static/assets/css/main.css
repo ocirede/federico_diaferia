@@ -3270,15 +3270,11 @@ input, select, textarea {
 			 .arrow.scrolly {
                 display: none;
               }
-
              .lang-toggle {
-                position: static;
-                margin-left: auto;
-                margin-right: 10px;
-
-              }
-
-		}
+                  display: inline-block;
+                  float: right;
+                  margin: 0 10px 10px 0;
+             }
 
 /* Feature Icons */
 
@@ -3469,11 +3465,11 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
-			    position: relative;
 				align-items: center;
 			}
 
 				#wrapper > section.intro > header {
+                    display: block
 					padding-top: 4rem;
 					width: 100%;
 				}
