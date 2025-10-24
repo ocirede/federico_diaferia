@@ -3272,7 +3272,6 @@ input, select, textarea {
               }
 
              .lang-toggle {
-                left: auto;
                 right: 10px;
               }
 
@@ -3467,6 +3466,7 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
+			    position: relative
 				align-items: center;
 			}
 
