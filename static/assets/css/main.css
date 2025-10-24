@@ -3472,7 +3472,7 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
-			    position: relative
+			    position: relative;
 				align-items: center;
 			}
 
