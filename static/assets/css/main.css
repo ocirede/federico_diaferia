@@ -3271,7 +3271,7 @@ input, select, textarea {
                 display: none;
               }
 
-             #wrapper > section.intro .lang-toggle {
+             .lang-toggle {
                     position: fixed !important;
                     top: 20px !important;
                     right: 20px !important;
@@ -3282,17 +3282,6 @@ input, select, textarea {
                     margin: 0 !important;
                 }
 
-             /* Target the link and image specifically */
-             #wrapper > section.intro > header .lang-toggle a {
-                display: inline-block !important;
-                width: auto !important;
-             }
-
-            /* Ensure the image doesn't get stretched */
-              #wrapper > section.intro > header .lang-toggle img {
-                width: 30px !important;
-                height: auto !important;
-              }
 
 /* Feature Icons */
 
