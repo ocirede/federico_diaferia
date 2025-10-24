@@ -3242,39 +3242,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
 
-            .gallery a img {
-                height: 12rem;
-                min-height: 0;
-            }
-
-            .gallery a.landscape img {
-                height: 12rem;
-            }
-
-            .gallery a.portrait img {
-                      height: auto;
-                      max-height: 14rem;
-                      width: 100%;
-                      object-fit: cover;
-                  }
-
-
-            .touch{
-                padding-left: 1rem;
-                padding-right: 1rem;
-                box-sizing: border-box;
-
-            }
-             .arrow.scrolly {
-                      display: none;
-                    }
-
-            .lang-toggle {
-               left: auto;
-               right: 10px;
-              }
 
 
 /* Feature Icons */
