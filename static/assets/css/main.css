@@ -3253,35 +3253,25 @@ input, select, textarea {
 			}
 
 			.gallery a.portrait img {
-                height: auto;
-                max-height: 14rem;
-                width: 100%;
-                object-fit: cover;
-            }
-
+				height: 14rem;
+			}
 
 			.touch{
 			    padding-left: 1rem;
-			    padding-right: 1rem;
+			    padding-right: 1rem
 			    box-sizing: border-box;
 
 			}
+
 			 .arrow.scrolly {
                 display: none;
               }
 
              .lang-toggle {
-                    position: fixed !important;
-                    top: 20px !important;
-                    right: 20px !important;
-                    left: auto !important;
-                    z-index: 99999 !important;
-                    display: block !important;
-                    width: auto !important;
-                    max-width: none !important;
-                    margin: 0 !important;
-                }
+                right: 10px;
+              }
 
+		}
 
 /* Feature Icons */
 
@@ -3472,7 +3462,6 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
-			    position: relative;
 				align-items: center;
 			}
 
