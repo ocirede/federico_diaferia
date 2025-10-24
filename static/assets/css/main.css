@@ -3271,10 +3271,10 @@ input, select, textarea {
                       display: none;
                     }
 
-             .lang-toggle {
-                    left: auto;
+            .lang-toggle {
+               left: auto;
+               right: 10px;
               }
-
 
 
 /* Feature Icons */
