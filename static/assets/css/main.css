@@ -3271,13 +3271,7 @@ input, select, textarea {
                 display: none;
               }
 
-             #wrapper > section.intro {
-				position: relative;
-				align-items: center;
-			 }
-
              .lang-toggle {
-                position: absolute
                 right: 10px;
               }
 
@@ -3472,7 +3466,6 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
-				position: relative;
 				align-items: center;
 			}
 
