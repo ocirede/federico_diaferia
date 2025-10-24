@@ -3271,9 +3271,8 @@ input, select, textarea {
                 display: none;
               }
              .lang-toggle {
-                  display: inline-block;
                   float: right;
-                  margin: 0 10px 10px 0;
+                  margin: 10px;
              }
 
 /* Feature Icons */
