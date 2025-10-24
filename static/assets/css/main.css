@@ -3271,7 +3271,7 @@ input, select, textarea {
                 display: none;
               }
 
-             #wrapper > section.intro > header .lang-toggle {
+             #wrapper > section.intro .lang-toggle {
                     position: fixed !important;
                     top: 20px !important;
                     right: 20px !important;
