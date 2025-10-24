@@ -2525,7 +2525,7 @@ input, select, textarea {
 /* Flags overlay */
 .lang-toggle {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 10px;
     display: flex;
     gap: 5px;
@@ -3271,7 +3271,8 @@ input, select, textarea {
                 display: none;
               }
 
-              .lang-toggle{
+             .lang-toggle{
+                   left: auto
                    right: 10px
               }
 
