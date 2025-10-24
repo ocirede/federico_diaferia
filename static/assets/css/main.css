@@ -3271,6 +3271,10 @@ input, select, textarea {
                 display: none;
               }
 
+              lang-toggle{
+              right: 10px
+              }
+
 		}
 
 /* Feature Icons */
