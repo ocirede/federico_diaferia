@@ -2523,35 +2523,34 @@ input, select, textarea {
                 object-position: center top;
         }
 /* Flags overlay */
-.lang-toggle {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    display: flex;
-    gap: 5px;
-    z-index: 1000;
-}
 
-.lang-toggle img {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+    .lang-toggle {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        gap: 5px;
+        z-index: 1000;
+    }
 
-.lang-toggle img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
+    .lang-toggle img {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-.lang-toggle img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
+    .lang-toggle img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
 
-
+    .lang-toggle img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
 /* List */
 
 	ol {
@@ -3473,6 +3472,7 @@ input, select, textarea {
 				}
 
 			#wrapper > section.intro {
+			    position: relative
 				align-items: center;
 			}
 
