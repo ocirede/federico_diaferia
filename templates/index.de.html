@@ -14,9 +14,13 @@
 
       <!-- Intro -->
       <section class="intro">
+        <div class="lang-toggle">
+           <a href="{{ url_for('portfolio', lang='en') }}">
+               <img src="static/images/eng_flag.png" alt="English" width="30">
+           </a>
+      </div>
 
         <header>
-
           <h1>Federico Diaferia</h1>
           <h2><strong>FULL STACK<br>WEBENTWICKLER</strong></h2>
           <ul class="actions">
@@ -27,11 +31,7 @@
           <span class="image fill" data-position="center"><img src="static/images/profile.jpg" alt="Profilbild" /></span>
         </div>
       </section>
-      <div class="lang-toggle">
-           <a href="{{ url_for('portfolio', lang='en') }}">
-               <img src="static/images/eng_flag.png" alt="English" width="30">
-           </a>
-      </div>
+
       <!-- Section -->
       <section id="first">
         <header>
