@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const phoneElement = document.getElementById("phone-text");
     if (phoneElement) {
-        phoneElement.textContent = `${phoneParts[0]} ${phoneParts[1]} ${phoneParts[2]}  ${phoneParts[3]}`;
+        phoneElement.textContent = phoneParts.join(" ");
     }
 });
