@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     emailLink.textContent = email;
-
+    // important
     const phoneElement = document.getElementById("phone-text");
     if (phoneElement) {
         phoneElement.textContent = phoneParts.join(" ");
