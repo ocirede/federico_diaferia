@@ -250,7 +250,7 @@
 
 								<li>
 								  <h3>Location</h3>
-								  <span>Berlin, Germany</span>
+								  <span id="address-text">Loading</span>
 								</li>
 
 								<li>
@@ -297,7 +297,8 @@
 			  window.portfolioData = {
 				isMobile: {{ 'true' if is_mobile else 'false' }},
 				emailParts: {{ email_parts | tojson }},
-				phoneParts: {{ phone_parts | tojson }}
+				phoneParts: {{ phone_parts | tojson }},
+				addressParts: {{address_parts | tojson}}
 			  };
 			</script>
 			<script src="static/assets/js/obfuscation_contact.js"></script>

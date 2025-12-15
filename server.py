@@ -27,11 +27,14 @@ def portfolio(lang):
         phone[6:9],
         phone[9:]
     ]
+    address = os.getenv("ADDRESS", "")
+    address_parts = address.split(".")
 
     template_vars = {
         "is_mobile": is_mobile,
         "email_parts": [email_user, email_domain_name, email_tld],
         "phone_parts": phone_parts,
+        "address_parts": address_parts
     }
 
     if lang == 'de':

@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const isMobile = data.isMobile === true || data.isMobile === "true";
     const emailParts = data.emailParts;
     const phoneParts = data.phoneParts;
+    const addressParts = data.addressParts;
 
     const email = `${emailParts[0]}@${emailParts[1]}.${emailParts[2]}`;
     const emailLink = document.getElementById("email-link");
@@ -26,4 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (phoneElement) {
         phoneElement.textContent = phoneParts.join(" ");
     }
+
+    const address = `${addressParts[0]} ${addressParts[1]} ${addressParts[2]}`;
+    const addressElement = document.getElementById("address-text")
+    if (addressElement):
+        addressElement.textContent = address
+
 });
