@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const addressElement = document.getElementById("address-text")
-    if (addressElement):
+    if (addressElement){
         addressElement.textContent = addressParts.join(", ");
+    }
 
 });
