@@ -28,9 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         phoneElement.textContent = phoneParts.join(" ");
     }
 
-    const address = `${addressParts[0]} ${addressParts[1]}`;
     const addressElement = document.getElementById("address-text")
     if (addressElement):
-        addressElement.textContent = address
+        addressElement.textContent = addressParts.join(", ");
 
 });
