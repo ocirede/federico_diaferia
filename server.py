@@ -13,21 +13,31 @@ def home():
 
 @app.route('/<lang>')
 def portfolio(lang):
-    # Detect if user is on mobile
     user_agent = request.headers.get("User-Agent", "").lower()
     is_mobile = "mobi" in user_agent or "android" in user_agent
 
-    # Pass .env variables and mobile info to template
+    email = os.getenv("EMAIL", "")
+    email_user, email_domain = email.split("@")
+    email_domain_name, email_tld = email_domain.split(".")
+
+    phone = os.getenv("PHONE", "")
+    phone_parts = [
+        phone[:3],
+        phone[3:6],
+        phone[6:9],
+        phone[9:]
+    ]
+
     template_vars = {
         "is_mobile": is_mobile,
-        "email": os.getenv("EMAIL"),
-        "phone": os.getenv("PHONE"),
-        "address": os.getenv("ADDRESS")
+        "email_parts": [email_user, email_domain_name, email_tld],
+        "phone_parts": phone_parts,
     }
 
     if lang == 'de':
         return render_template('index.de.html', **template_vars)
     return render_template('index.en.html', **template_vars)
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))

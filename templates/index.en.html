@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="static/assets/css/main.css" />
 		<link rel="icon" type="image/png"  sizes="64x64" href="/static/images/f.png">
 	</head>
-	<body class="is-preload">
 
+	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -54,7 +54,7 @@
 					</section>
 
 				<!-- Section -->
-					<section id="second">>
+					<section id="second">
 						<header>
 							<h2>EDUCATION BACKGROUND</h2>
 							<ul class="actions">
@@ -237,45 +237,39 @@
 								<h2>Get in touch</h2>
 							</header>
 							<footer>
-								  <ul class="items">
-									<li>
-									  <h3>Email</h3>
-									  {% if is_mobile %}
-										<a href="mailto:{{ email }}">{{ email }}</a>
-									  {% else %}
-										<a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ email }}" target="_blank">{{ email }}</a>
-									  {% endif %}
-									</li>
+							  <ul class="items">
+								<li>
+								  <h3>Email</h3>
+								  <a id="email-link" href="#">Loading…</a>
+								</li>
 
-									<li>
-									  <h3>Phone</h3>
-									  <span>{{ phone }}</span>
-									</li>
+								<li>
+								  <h3>Phone</h3>
+								  <span id="phone-text">Loading…</span>
+								</li>
 
-									<li>
-									  <h3>Address</h3>
-									  <span>{{ address }}</span>
-									</li>
+								<li>
+								  <h3>Location</h3>
+								  <span>Berlin, Germany</span>
+								</li>
 
+								<li>
+								  <h3>Elsewhere</h3>
+								  <ul class="icons">
 									<li>
-									  <h3>Elsewhere</h3>
-									  <ul class="icons">
-										<li>
-										  <a href="https://www.linkedin.com/in/federico-d-902876225/"
-											 target="_blank" class="icon brands fa-linkedin-in">
-											<span class="label">LinkedIn</span>
-										  </a>
-										</li>
-										<li>
-										  <a href="https://github.com/ocirede"
-											 target="_blank" class="icon brands fa-github">
-											<span class="label">GitHub</span>
-										  </a>
-										</li>
-									  </ul>
+									  <a href="https://www.linkedin.com/in/federico-d-902876225/" target="_blank" class="icon brands fa-linkedin-in">
+										<span class="label">LinkedIn</span>
+									  </a>
+									</li>
+									<li>
+									  <a href="https://github.com/ocirede" target="_blank" class="icon brands fa-github">
+										<span class="label">GitHub</span>
+									  </a>
 									</li>
 								  </ul>
-								</footer>
+								</li>
+							  </ul>
+							</footer>
 						</section>
 					</section>
 				<!-- Section -->
@@ -299,6 +293,15 @@
 			<script src="static/assets/js/breakpoints.min.js"></script>
 			<script src="static/assets/js/util.js"></script>
 			<script src="static/assets/js/main.js"></script>
+		    <!-- Flask → JS data -->
+			<script>
+			  window.portfolioData = {
+				isMobile: {{ 'true' if is_mobile else 'false' }},
+				emailParts: {{ email_parts | tojson }},
+				phoneParts: {{ phone_parts | tojson }}
+			  };
+			</script>
+			<script src="static/assets/js/obfuscation_contact.js"></script>
 
 	</body>
 
