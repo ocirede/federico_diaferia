@@ -29,7 +29,6 @@ def portfolio(lang):
     ]
     address = os.getenv("ADDRESS", "")
     address_parts = address.split(".")
-
     template_vars = {
         "is_mobile": is_mobile,
         "email_parts": [email_user, email_domain_name, email_tld],
